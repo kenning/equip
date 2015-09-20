@@ -47,12 +47,12 @@
             <li class="{{task.statusClass}}-element animated fadeIn" ng-repeat="task in lists[0]">
               {{task.content}}
               <div class="agile-detail">
-                <a ng-click="deleteTask(task, 0)" href="#" class="pull-right btn btn-xs btn-white">
+                <span ng-click="deleteTask(task, 0)" href="#" class="pull-right btn btn-xs btn-white">
                   <i class="fa fa-times"></i>
-                </a>
-                <a ng-click="cycleTag(task)" href="#" class="pull-right btn btn-xs btn-white">
+                </span>
+                <span ng-click="cycleTag(task)" href="#" class="pull-right btn btn-xs btn-white">
                   {{task.tagName}}
-                </a>
+                </span>
                 <i class="fa fa-clock-o"></i> {{task.date}}
               </div>
             </li>
@@ -91,12 +91,12 @@
             <li class="{{task.statusClass}}-element animated fadeIn" ng-repeat="task in lists[1]">
               {{task.content}}
               <div class="agile-detail">
-                <a ng-click="deleteTask(task, 1)" href="#" class="pull-right btn btn-xs btn-white">
+                <span ng-click="deleteTask(task, 1)" href="#" class="pull-right btn btn-xs btn-white">
                   <i class="fa fa-times"></i>
-                </a>
-                <a ng-click="cycleTag(task)" href="#" class="pull-right btn btn-xs btn-white">
+                </span>
+                <span ng-click="cycleTag(task)" href="#" class="pull-right btn btn-xs btn-white">
                   {{task.tagName}}
-                </a>
+                </span>
                 <i class="fa fa-clock-o"></i> {{task.date}}
               </div>
             </li>
@@ -135,12 +135,12 @@
             <li class="{{task.statusClass}}-element animated fadeIn" ng-repeat="task in lists[2]">
               {{task.content}}
               <div class="agile-detail">
-                <a ng-click="deleteTask(task, 2)" href="#" class="pull-right btn btn-xs btn-white">
+                <span ng-click="deleteTask(task, 2)" href="#" class="pull-right btn btn-xs btn-white">
                   <i class="fa fa-times"></i>
-                </a>
-                <a ng-click="cycleTag(task)" href="#" class="pull-right btn btn-xs btn-white">
+                </span>
+                <span ng-click="cycleTag(task)" href="#" class="pull-right btn btn-xs btn-white">
                   {{task.tagName}}
-                </a>
+                </span>
                 <i class="fa fa-clock-o"></i> {{task.date}}
               </div>
             </li>
@@ -179,12 +179,12 @@
             <li class="{{task.statusClass}}-element animated fadeIn" ng-repeat="task in lists[3]">
               {{task.content}}
               <div class="agile-detail">
-                <a ng-click="deleteTask(task, 3)" href="#" class="pull-right btn btn-xs btn-white">
+                <span ng-click="deleteTask(task, 3)" href="#" class="pull-right btn btn-xs btn-white">
                   <i class="fa fa-times"></i>
-                </a>
-                <a ng-click="cycleTag(task)" href="#" class="pull-right btn btn-xs btn-white">
+                </span>
+                <span ng-click="cycleTag(task)" href="#" class="pull-right btn btn-xs btn-white">
                   {{task.tagName}}
-                </a>
+                </span>
                 <i class="fa fa-clock-o"></i> {{task.date}}
               </div>
             </li>

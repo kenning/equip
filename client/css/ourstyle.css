@@ -52,10 +52,11 @@
   font-size: 20px;
   margin-top: 20px;
   font-weight: 200;
-
-.row.event {
+}
+/*row.event {
   padding: 5px;
 }
+*/
 .chat-name {
   display: inline;
   margin-right: 10px;
@@ -331,9 +332,6 @@ cursor:default!important;
 }
 .dashboard-padding {
   margin:20px;
-}
-.dashboard-todo-button {
-  margin-bottom:
 }
 .dashboard-team-select {
   padding-top:5px!important;

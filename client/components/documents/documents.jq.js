@@ -1,4 +1,3 @@
-var config = (process.env.TRAVIS) ? process.env.config :require('./config.js');
 $(function() {
 	$('#upload-form').transloadit({
 		// We want to wait for all encodings to finish before the form
@@ -11,11 +10,19 @@ $(function() {
 		params: {
 			auth: {
 				// This is your API key.
-				key: process.env.TRANSLOADIT || config.key
+				key: '9ab32cc05fd311e5b3f19da10b2cb81b'
 			},
-			template_id: '275df800240e11e5a20c2dc0bd276748'
+			steps: {
+        resize_to_75: {
+          robot: "/image/resize",
+          use: ":original",
+          width: 75,
+          height: 75
+        }
+      }
 		},
 		onSuccess: function(assembly) {
+			console.log(assembly);
 			var thisTeam = localStorage['$selectedteam'];
 			var thisUser = localStorage['firebase:session::mksequip'].uid;
 			var refUrl = 'https://mksequip.firebaseIO.com/';

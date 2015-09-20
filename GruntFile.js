@@ -27,7 +27,7 @@ module.exports = function(grunt) {
     cssmin: {
       target: {
         files: {
-          './client/built/styles.min.css' : ['./client/css/*.css']
+          './client/built/styles.min.css' : ['./client/css/**/*.css']
         }
       }
     },
